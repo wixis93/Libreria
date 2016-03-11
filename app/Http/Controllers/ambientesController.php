@@ -20,4 +20,19 @@ class ambientesController extends Controller
     	//return $request->nombre;
     	//return $request->email;
     }
+
+    public function store(Request $request)
+    {
+    	//return $request->all();
+
+    	$usuario = \DB::table('usuario')->insert([
+    			'nombre' => $request->nombre,
+    			'nick' => $request->nick,
+    			'email' => $request->email,
+    			'password' => $request->password,
+    			'telefono' => $request->telefono
+
+    		]);
+    	echo "registro insertado";
+    }
 }
