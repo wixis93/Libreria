@@ -24,15 +24,16 @@ class ambientesController extends Controller
     public function store(Request $request)
     {
     	//return $request->all();
-
+        //encriptar contraseña
+        $contrasena = \Hash::make($request->password);
     	$usuario = \DB::table('usuario')->insert([
     			'nombre' => $request->nombre,
     			'nick' => $request->nick,
     			'email' => $request->email,
-    			'password' => $request->password,
-    			'telefono' => $request->telefono
-
+    			'password' => $contrasena,
+    			'telefono' => $request->telefono,
+                'tipo' => 1
     		]);
-    	echo "registro insertado";
+    	return view('website.regusr');
     }
 }

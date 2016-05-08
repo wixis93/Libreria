@@ -21,6 +21,56 @@
   border: 2px solid #ffccbc;
  }
 
+/*----------------------------------------*/
  .btn-social{
  	margin-left: 20px;
+ }
+
+ .img-login{
+ 	margin-right: 120px;
+ 	margin-top: 20px;
+ }
+ .imglog{
+ 	width: 500px; 
+ 	height: 520px;
+ }
+ .img-newusr{
+ 	margin-right: 140px;
+ 	margin-top: 50px;
+ }
+ 
+ #new-usr{
+ 	width: 500px;
+ 	height: 600px;
+ }
+
+ p{
+ 	text-align: justify;
+ }
+ .error{
+ 	color: red;
+ 	padding: 3px;
+ }
+
+ #navegacion a {
+ 	color: black;
+ 	margin-top: 10px;
+ }
+
+  #navegacion span {
+ 	color: black;
+ }
+
+ .item-navegacion{
+ 	margin-right: 10px !important;
+ } 
+
+ .active{
+ 	border-radius: 5px;
+ 	padding: 5px;
+ 	background: #CCC;
+ }
+
+ .barra{
+ 	margin-top: 10px;
  }
